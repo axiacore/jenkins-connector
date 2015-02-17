@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name='jenkinsconnector',
-    version='0.1',
+    version='0.1.1',
     description='A library to communicate with jenkins',
     url='https://github.com/AxiaCore/jenkins-connector',
     author='AxiaCore',

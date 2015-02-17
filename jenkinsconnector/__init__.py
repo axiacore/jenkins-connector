@@ -251,12 +251,14 @@ class JenkinsConnector:
     def qualityindicators(self, job_list=None):
         """Shows in the standard output statistics that offer information for
         quality indicators used in Axiacore.
-        Receives as parameter a list of names of projects to be evaluated, if
-        not given, tries to extract all the projects wit suffix - Dev.
-            pass
+        Receives as parameter a list of names of projects to be evaluated,
+        or it can be a string suffix for the names of the projects you want,
+        if not given, tries to extract all the projects wit suffix - Testing.
         """
         if job_list is None:
-            job_list = [name for name in self.jobs if name.endswith('master - Testing')]
+            job_list = [name for name in self.jobs if name.endswith(' - Testing')]
+        elif isinstance(job_list, str) or isinstance(job_list, unicode):
+            job_list = [name for name in self.jobs if name.endswith(job_list)]
         totcob = 0
         cantcob = 0
         cantsloc = 0

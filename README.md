@@ -1,13 +1,7 @@
 jenkins-connector
 =================
 
-.. image:: https://pypip.in/v/jenkinsconnector/badge.png
-    :target: https://pypi.python.org/pypi/jenkinsconnector/
-    :alt: Latest PyPI version
-
-.. image:: https://pypip.in/d/jenkinsconnector/badge.png
-    :target: https://pypi.python.org/pypi/jenkinsconnector/
-    :alt: Number of PyPI downloads
+[![PyPI version](https://badge.fury.io/py/jenkinsconnector.svg)](http://badge.fury.io/py/jenkinsconnector)
 
 
 A library to communicate with jenkins
